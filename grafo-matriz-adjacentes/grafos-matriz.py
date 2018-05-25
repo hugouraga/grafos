@@ -15,7 +15,7 @@ class Grafo:
             self.matrizAdjacentes[verticeA][verticeB] = 1
         else:
             return IndexError("O índice é inválido!")
-    def caminho(self,origem,destino):
+    def VerficaCaminho(self,origem,destino):
         if self.matrizAdjacentes[origem][destino] == 1:
             return True
         else:
@@ -29,6 +29,8 @@ class Grafo:
                 listaAdjColuna.append(pos)
             pos += 1
         return listaAdjColuna
-    def menorCaminho:
-        pass
+    def __len__(self):
+        return self.quantVertices
+
+            
 
