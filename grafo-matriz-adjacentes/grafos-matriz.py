@@ -26,5 +26,7 @@ class Grafo:
         pos = 0
         for adjacentes in lista:
             if adjacentes == 1:
-                pass
+                listaAdjColuna.append(pos)
+            pos += 1
+        return listaAdjColuna  
 
