@@ -28,5 +28,7 @@ class Grafo:
             if adjacentes == 1:
                 listaAdjColuna.append(pos)
             pos += 1
-        return listaAdjColuna  
+        return listaAdjColuna
+    def menorCaminho:
+        pass
 
