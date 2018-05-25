@@ -15,5 +15,16 @@ class Grafo:
             self.matrizAdjacentes[verticeA][verticeB] = 1
         else:
             return IndexError("O índice é inválido!")
-        
-        
+    def caminho(self,origem,destino):
+        if self.matrizAdjacentes[origem][destino] == 1:
+            return True
+        else:
+            return False
+    def adjacentes(self,linha):
+        listaAdjColuna = []
+        lista = self.matrizAdjacentes[linha]
+        pos = 0
+        for adjacentes in lista:
+            if adjacentes == 1:
+                pass
+
