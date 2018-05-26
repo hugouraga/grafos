@@ -11,7 +11,17 @@ class Matriz:
         return self.quantVertices == 0
     def inserirAresta(self,verticeA,verticeB,grafoDirecionado=True):
         self.listaVertices.inserirAres(verticeA,verticeB)
-        
+
     def __str__(self):
-        return self.listaVertices.__str__()
- 
+        #return self.listaVertices.__str__()
+        aux = 0
+        tamanhoLista = self.listaVertices.__len__()
+        objeto = self.listaVertices.primeiro.proximo
+        s = ""
+        while aux < tamanhoLista:
+            s += str(aux) + " = " + str(objeto.item)
+            s += "\n"
+            aux += 1
+            objeto = objeto.proximo
+        return s
+

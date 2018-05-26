@@ -38,6 +38,7 @@ class Lista:
             verificador += 1
         aux.item.append(verticeB)
         verificador = 0
+        aux = self.primeiro.proximo
         while verificador < verticeB and not aux is None:
             aux = aux.proximo
             verificador += 1
